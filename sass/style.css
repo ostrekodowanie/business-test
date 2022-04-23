@@ -64,6 +64,7 @@ html, body {
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 0;
+  line-height: 150%;
 }
 .s1 h1 span.underline {
   position: relative;
@@ -145,15 +146,23 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 200ms ease;
+}
+.icons-flex button svg {
+  max-width: 60%;
+  max-height: 60%;
 }
 .icons-flex button img {
-  max-width: 55%;
-  max-height: 55%;
+  max-width: 60%;
+  max-height: 60%;
 }
 .icons-flex button:hover,
 .icons-flex button:checked {
   transform: scale(1.1);
   background-color: #2EC4B6;
+}
+.icons-flex button:hover path {
+  fill: #CCFFFA;
 }
 .icons-flex button:last-child {
   grid-column: 1/2;

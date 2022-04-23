@@ -70,6 +70,7 @@ html, body {
         font-size: 1.8rem;
         font-weight: 600;
         margin-top: 0;
+        line-height: 150%;
         span.underline {
             position: relative;
             // img {
@@ -153,9 +154,14 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 200ms ease;
+        svg {
+            max-width: 60%;
+            max-height: 60%;
+        }
         img {
-            max-width: 55%;
-            max-height: 55%;
+            max-width: 60%;
+            max-height: 60%;
         }
     }
     button:hover,
@@ -163,6 +169,11 @@ html, body {
         transform: scale(1.1);
         background-color: $primary;
     }
+
+    button:hover path {
+        fill: $primaryLight;
+    }
+
     button:last-child {
         grid-column: 1 / 2;
     }
