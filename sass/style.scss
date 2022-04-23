@@ -29,6 +29,14 @@ html, body {
     flex-direction: column;
 }
 
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+
 .s1 {
     padding: 0 8vw;
 }
