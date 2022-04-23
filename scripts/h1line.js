@@ -7,7 +7,7 @@ defaultFormMargin();
 
 window.addEventListener('resize', () => {
     let titleWidth = title.offsetWidth;
-    if(titleWidth < 316) {
+    if(titleWidth < 317) {
         title.style.lineHeight = "150%";
         form.style.marginTop = "2rem";
     }

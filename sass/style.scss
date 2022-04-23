@@ -29,7 +29,7 @@ html, body {
     flex-direction: column;
 }
 
-.screen {
+.s1 {
     padding: 0 8vw;
 }
 
@@ -65,7 +65,7 @@ html, body {
 
 .s1 {
     min-height: calc(100vh - 6rem);
-
+    position: relative;
     h1 {
         font-size: 1.8rem;
         font-weight: 600;
@@ -107,7 +107,7 @@ html, body {
         right: 0;
         z-index: -1;
         max-width: 65%;
-        max-height: 50%;
+        max-height: 55%;
     }
 }
 
@@ -168,6 +168,78 @@ html, body {
     }
 }
 
+
+$s2background: #FDFFFC;
+
+.screen {
+    text-align: center;
+    padding: 3rem 8vw;
+    background-color: $s2background;
+    h3 {
+        color: $primary;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+        color: rgba($fontColor, 0.81);
+    }
+}
+
+//section 2
+
+.problems-grid,
+.learn-grid {
+    display: grid;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.problem-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #FBFBFB;
+    border: 1px solid rgba(1, 22, 39, 0.12);
+    border-radius: 1rem;
+    img {
+        width: 30%;
+    }
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        color: rgba($fontColor, 0.73);
+    }
+    p {
+        max-width: 80%;
+        color: rgba(1, 22, 39, 0.42);
+    }
+}
+
+.learn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+    background-color: #FBFBFB;
+    border: 1px solid rgba(1, 22, 39, 0.12);
+    border-radius: 1rem;
+    
+    h4 {
+        font-size: 1.4rem;
+        margin: 1em 0 0 0;
+        font-weight: 500;
+        color: rgba($fontColor, 0.73)
+    }
+
+    img {
+        max-width: 20%; 
+        max-height: 45%; 
+    }
+}
 
 @keyframes slide {
     from {
