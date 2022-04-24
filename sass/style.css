@@ -130,7 +130,7 @@ html, body {
   grid-template-columns: repeat(2, max-content);
   max-width: 4rem;
   gap: 1.2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 .icons-flex button {
   background-color: #CCFFFA;
