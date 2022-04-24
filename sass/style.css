@@ -27,7 +27,7 @@ html, body {
 }
 
 .header {
-  height: 6rem;
+  height: 5rem;
   padding: 0 8vw;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ html, body {
 }
 
 .s1 {
-  min-height: calc(100vh - 6rem);
+  padding-bottom: 1in;
   position: relative;
 }
 .s1 h1 {
