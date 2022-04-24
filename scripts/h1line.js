@@ -1,6 +1,6 @@
 const title = document.querySelector('.s1 h1');
 const form = document.querySelector('.email-input');
-const defaultFormMargin = () => form.style.marginTop = "3rem";
+const defaultFormMargin = () => form.style.marginTop = "2rem";
 defaultFormMargin();
 
 window.addEventListener('resize', () => {
