@@ -92,7 +92,7 @@ html, body {
 }
 
 .email-input {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -130,7 +130,6 @@ html, body {
   display: grid;
   grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
-  max-width: 4rem;
   gap: 1.2rem;
   padding: 2.5rem 0;
 }
@@ -381,7 +380,7 @@ html, body {
     opacity: 1;
   }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 540px) {
   .s1 h1 {
     font-size: 2.5rem;
     line-height: 140% !important;
