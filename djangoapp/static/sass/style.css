@@ -188,6 +188,10 @@ html, body {
   font-weight: 600;
 }
 
+.s4 {
+  padding-bottom: 0;
+}
+
 .problems-grid,
 .learn-grid {
   display: grid;
@@ -262,15 +266,13 @@ html, body {
   justify-content: center;
 }
 
-.s4 {
-  padding-bottom: 2in;
-}
-
 .line {
-  height: 7in;
+  height: 9in;
   width: 3px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   background-color: #2EC4B6;
+  box-sizing: content-box;
+  padding-bottom: 2in;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -287,63 +289,41 @@ html, body {
   position: relative;
 }
 
-.lp1::before {
-  content: "Learn basics";
+.line-text {
   position: absolute;
-  right: 3rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.lp3::before {
-  content: "Verify work";
-  position: absolute;
-  right: 3rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.lp5::before {
-  content: "Learn basics";
-  position: absolute;
-  right: 3rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.lp2::after {
-  content: "Understand topics";
-  position: absolute;
-  left: 3rem;
-}
-
-.lp4::after {
-  content: "Learn basics";
-  position: absolute;
-  left: 3rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.lp6::after {
-  content: "Be master";
-  position: absolute;
-  left: 3rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.line-point::after,
-.line-point::before {
   padding: 0.6em 1.2em;
   text-align: center;
   background-color: #FBFBFB;
   border: 1px solid rgba(1, 22, 39, 0.12);
+}
+
+.line-text.right {
+  left: 3rem;
+}
+
+.line-text.max-width {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.line-text.left {
+  right: 3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.line-text {
+  padding: 0.6em 1.2em;
+  text-align: center;
+  background-color: #FBFBFB;
+  border: 1px solid rgba(1, 22, 39, 0.12);
+}
+
+.s5 {
+  background-color: #2EC4B6;
+  min-height: 100vh;
 }
 
 @-webkit-keyframes slide {
@@ -409,8 +389,7 @@ html, body {
     max-width: 5.5rem;
   }
 
-  .line-point::after,
-.line-point::before {
+  .line-text {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
@@ -433,7 +412,7 @@ html, body {
 
   .line {
     width: 4px;
-    height: 8in;
+    height: 11in;
   }
 
   .line-point {
@@ -441,18 +420,17 @@ html, body {
     height: 2.2rem;
   }
 
-  .line-point::after,
-.line-point::before {
+  .line-text {
     font-size: 1.1rem;
     padding: 0.7em 1.5em;
   }
 
-  .line-point::after {
-    left: 4rem;
+  .line-text.left {
+    right: 4rem;
   }
 
-  .line-point::before {
-    right: 4rem;
+  .line-text.right {
+    left: 4rem;
   }
 }
 @media all and (min-width: 1150px) {
@@ -476,6 +454,10 @@ html, body {
   }
   .screen h3 {
     font-size: 1.5rem;
+  }
+
+  .s4 {
+    padding: 1in 10vw 0 10vw;
   }
 
   .s1 {
@@ -525,11 +507,10 @@ html, body {
   }
 
   .line {
-    height: 10in;
+    height: 12in;
   }
 
-  .line-point::after,
-.line-point::before {
+  .line-text {
     font-size: 1.2rem;
   }
 }
@@ -582,7 +563,7 @@ html, body {
   }
 
   .line {
-    height: 12in;
+    height: 13in;
     width: 5px;
   }
 
@@ -591,8 +572,15 @@ html, body {
     height: 2.5rem;
   }
 
-  .line-point::after,
-.line-point::before {
+  .line-text {
     font-size: 1.4rem;
+  }
+
+  .line-text.left {
+    right: 5rem;
+  }
+
+  .line-text.right {
+    left: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */

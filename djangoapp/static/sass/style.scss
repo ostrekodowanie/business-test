@@ -173,9 +173,6 @@ html, body {
     }
 }
 
-
-
-
 .screen {
     text-align: center;
     padding: 3rem 8vw;
@@ -193,6 +190,9 @@ html, body {
     }
 }
 
+.s4 {
+    padding-bottom: 0;
+}
 //section 2
 
 .problems-grid,
@@ -270,15 +270,13 @@ html, body {
 
 //section 3
 
-.s4 {
-    padding-bottom: 2in;
-}
-
 .line {
-    height: 7in;
+    height: 9in;
     width: 3px;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     background-color: $primary;
+    box-sizing: content-box;
+    padding-bottom: 2in;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -295,53 +293,39 @@ html, body {
     position: relative;
 }
 
-.lp1::before {
-    content: "Learn basics";
+.line-text {
     position: absolute;
-        right: 3rem;
-    width: max-content;
-}
-
-.lp3::before {
-    content: "Verify work";
-    position: absolute;
-        right: 3rem;
-    width: max-content;
-}
-
-.lp5::before {
-    content: "Learn basics";
-    position: absolute;
-        right: 3rem;
-    width: max-content;
-}
-
-.lp2::after {
-    content: "Understand topics";
-    position: absolute;
-        left: 3rem;
-}
-
-.lp4::after {
-    content: "Learn basics";
-    position: absolute;
-        left: 3rem;
-    width: max-content;
-}
-
-.lp6::after {
-    content: "Be master";
-    position: absolute;
-        left: 3rem;
-    width: max-content;
-}
-
-.line-point::after,
-.line-point::before {
     padding: .6em 1.2em;
     text-align: center;
     background-color: #FBFBFB;
     border: 1px solid rgba(1, 22, 39, 0.12);
+}
+
+.line-text.right {
+    left: 3rem;
+}
+
+.line-text.max-width {
+    width: max-content;
+}
+
+.line-text.left {
+    right: 3rem;
+    width: max-content;
+}
+
+.line-text {
+    padding: .6em 1.2em;
+    text-align: center;
+    background-color: #FBFBFB;
+    border: 1px solid rgba(1, 22, 39, 0.12);
+}
+
+// section 4
+
+.s5 {
+    background-color: $primary;
+    min-height: 100vh;
 }
 
 @keyframes slide {
@@ -397,8 +381,7 @@ html, body {
     }
 
     //section 4 
-    .line-point::after,
-    .line-point::before {
+    .line-text {
         min-width: max-content;
     }
 }
@@ -420,7 +403,7 @@ html, body {
     //section 4 
     .line {
         width: 4px;
-        height: 8in;
+        height: 11in;
     }
 
     .line-point {
@@ -428,18 +411,17 @@ html, body {
         height: 2.2rem;
     }
 
-    .line-point::after,
-    .line-point::before {
+    .line-text {
         font-size: 1.1rem;
         padding: .7em 1.5em;
     }
 
-    .line-point::after {
-        left: 4rem;
+    .line-text.left {
+        right: 4rem;
     }
 
-    .line-point::before {
-        right: 4rem;
+    .line-text.right {
+        left: 4rem;
     }
 }
 
@@ -464,7 +446,11 @@ html, body {
         h3 {
             font-size: 1.5rem;
         }
-    } 
+    }
+
+    .s4 {
+        padding: 1in 10vw 0 10vw;
+    }
 
     .s1 {
         display: flex;
@@ -518,11 +504,10 @@ html, body {
 
     //section 4 
     .line {
-        height: 10in;
+        height: 12in;
     }
 
-    .line-point::after,
-    .line-point::before {
+    .line-text {
         font-size: 1.2rem;
     }
   
@@ -580,7 +565,7 @@ html, body {
     //section 4
 
     .line {
-        height: 12in;
+        height: 13in;
         width: 5px;
     }
 
@@ -589,8 +574,15 @@ html, body {
         height: 2.5rem;
     }
 
-    .line-point::after,
-    .line-point::before {
+    .line-text {
         font-size: 1.4rem;
+    }
+
+    .line-text.left {
+        right: 5rem;
+    }
+
+    .line-text.right {
+        left: 5rem;
     }
 }

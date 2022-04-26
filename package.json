@@ -1,0 +1,20 @@
+{
+  "name": "business",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostrekodowanie/business.git"
+  },
+  "keywords": [],
+  "author": "Filip Ferencz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ostrekodowanie/business/issues"
+  },
+  "homepage": "https://github.com/ostrekodowanie/business#readme"
+}
