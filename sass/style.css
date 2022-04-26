@@ -11,6 +11,7 @@ img {
 }
 
 html, body {
+  background-color: red;
   margin: 0;
   padding: 0;
   position: relative;
@@ -62,10 +63,18 @@ html, body {
   margin-top: 0;
   line-height: 150%;
 }
-.s1 h1 span.underline {
+.s1 h2 {
+  font-size: 0.8rem;
+  color: #2EC4B6;
+  font-weight: 500;
+  margin: 0.5em 0 0 0;
+}
+
+.underline {
   position: relative;
 }
-.s1 h1 span.underline::after {
+
+.underline::after {
   content: "";
   display: block;
   background: url("../images/underline.svg") no-repeat scroll;
@@ -74,12 +83,10 @@ html, body {
   height: 0.5em;
   position: absolute;
   bottom: -0.5em;
-}
-.s1 h2 {
-  font-size: 0.8rem;
-  color: #2EC4B6;
-  font-weight: 500;
-  margin: 0.5em 0 0 0;
+  transform: translate(-40%);
+  opacity: 0;
+  -webkit-animation: slide 300ms ease 300ms forwards;
+          animation: slide 300ms ease 300ms forwards;
 }
 
 .main-image {
@@ -340,10 +347,6 @@ html, body {
 }
 
 @-webkit-keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
   to {
     opacity: 1;
     transform: translateX(0%);
@@ -351,10 +354,6 @@ html, body {
 }
 
 @keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
   to {
     opacity: 1;
     transform: translateX(0%);
