@@ -188,6 +188,10 @@ html, body {
   font-weight: 600;
 }
 
+.s4 {
+  padding-bottom: 0;
+}
+
 .problems-grid,
 .learn-grid {
   display: grid;
@@ -262,15 +266,13 @@ html, body {
   justify-content: center;
 }
 
-.s4 {
-  padding-bottom: 4in;
-}
-
 .line {
   height: 9in;
   width: 3px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   background-color: #2EC4B6;
+  box-sizing: content-box;
+  padding-bottom: 2in;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -317,6 +319,11 @@ html, body {
   text-align: center;
   background-color: #FBFBFB;
   border: 1px solid rgba(1, 22, 39, 0.12);
+}
+
+.s5 {
+  background-color: #2EC4B6;
+  min-height: 100vh;
 }
 
 @-webkit-keyframes slide {
@@ -450,7 +457,7 @@ html, body {
   }
 
   .s4 {
-    padding-bottom: 4in;
+    padding: 1in 10vw 0 10vw;
   }
 
   .s1 {
