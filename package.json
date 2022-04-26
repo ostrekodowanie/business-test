@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ostrekodowanie/business/issues"
   },
-  "homepage": "https://github.com/ostrekodowanie/business#readme"
+  "homepage": "https://github.com/ostrekodowanie/business#readme",
+  "dependencies": {
+    "pip": "^0.0.1"
+  }
 }
